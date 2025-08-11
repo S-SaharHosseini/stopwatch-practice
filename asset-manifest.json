@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stopwatch-practice/static/css/main.b7ab14fc.css",
+    "main.js": "/stopwatch-practice/static/js/main.7be2cf7d.js",
+    "static/media/Rubik-VariableFont_wght.ttf": "/stopwatch-practice/static/media/Rubik-VariableFont_wght.d3c04283940221abf09a.ttf",
+    "static/media/Pompiere-Regular.ttf": "/stopwatch-practice/static/media/Pompiere-Regular.d64e9f0ce4043c4bfaac.ttf",
+    "index.html": "/stopwatch-practice/index.html",
+    "main.b7ab14fc.css.map": "/stopwatch-practice/static/css/main.b7ab14fc.css.map",
+    "main.7be2cf7d.js.map": "/stopwatch-practice/static/js/main.7be2cf7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7ab14fc.css",
+    "static/js/main.7be2cf7d.js"
+  ]
+}
