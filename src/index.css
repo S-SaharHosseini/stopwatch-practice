@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-chubby/css/uicons-solid-chubby.css");
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-chubby/css/uicons-regular-chubby.css");
+@font-face {
+  font-family: "Pompiere";
+  src: url("../public/assets/font/Pompiere-Regular.ttf");
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../public/assets/font/Rubik-VariableFont_wght.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #0c43c6;
+  @apply h-screen w-full flex items-center justify-center;
+}
+.main {
+  @apply h-screen w-full;
+}
+i {
+  @apply text-white text-2xl;
+  line-height: 0 !important;
+}
+.timer-section {
+  background: linear-gradient(145deg, #0b3cb2, #0d48d4);
+  box-shadow: 14px 14px 40px #082e89, -14px -14px 40px #1058ff;
+  @apply flex items-center justify-center rounded-full my-10 w-[300px] h-[300px] lg:w-[350px] lg:h-[350px];
+}
+.timer-content {
+  background: #0c43c6;
+  box-shadow: inset 14px 14px 40px #082e89, inset -14px -14px 40px #1058ff;
+  @apply rounded-full relative w-[270px] h-[270px] lg:w-[315px] lg:h-[315px];
+}
+.btn-section {
+  @apply w-9/12 absolute flex items-center justify-around bottom-10 lg:bottom-12 left-1/2 -translate-x-1/2;
+}
+.btn-section div.start {
+  @apply bg-white rounded-full w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] flex items-center justify-center cursor-pointer;
+}
+.btn-section div.start i {
+  color: #0c43c6 !important;
+}
+.btn-section div.stop {
+  @apply bg-rose-600 rounded-full w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] flex items-center justify-center cursor-pointer;
+}
+.btn-section div.reset {
+  background: linear-gradient(145deg, #0d48d4, #0b3cb2);
+  box-shadow: 5px 5px 14px #082d85, -5px -5px 14px #1059ff;
+  @apply w-12 h-12 lg:w-14 lg:h-14 rounded-full flex items-center justify-center cursor-pointer;
+}
+.btn-section div.lap {
+  background: linear-gradient(145deg, #0d48d4, #0b3cb2);
+  box-shadow: 5px 5px 14px #082d85, -5px -5px 14px #1059ff;
+  @apply w-12 h-12 lg:w-14 lg:h-14 rounded-full flex items-center justify-center cursor-pointer;
+}
+.lap-section {
+  @apply flex flex-col items-center justify-center;
+}
+
+div.stopwatch {
+  @apply absolute top-6 flex flex-col items-center justify-center left-1/2 -translate-x-1/2;
+}
+div.stopwatch i,
+p {
+  @apply opacity-50;
+}
+p {
+  @apply text-white mt-1;
+  font-family: "Pompiere";
+}
+h1 {
+  white-space: nowrap;
+  font-family: "Rubik";
+  @apply text-white text-5xl mt-3 lg:mt-5 font-medium;
+}
+.lap-list {
+  width: 300px;
+  height: fit-content;
+  @apply rounded-full flex items-center justify-between px-6 py-4 mb-5;
+  background: linear-gradient(145deg, #0d48d4, #0b3cb2);
+  box-shadow: 5px 5px 14px #082d85, -5px -5px 14px #1059ff;
+}
+.lap-list p {
+  line-height: 0;
+  font-family: "Rubik";
+  @apply text-white opacity-100;
+}
+.lap-list i {
+  line-height: 0;
+  font-family: "Rubik";
+  @apply text-white opacity-40 text-xs  cursor-pointer;
+}
+body.dark {
+  background: #2a2a2d;
+}
+body.dark .timer-section {
+  background: linear-gradient(145deg, #262629, #2d2d30);
+  box-shadow: 17px 17px 41px #111112, -17px -17px 41px #434348;
+}
+body.dark .timer-content {
+  background: #2a2a2d;
+  box-shadow: inset 17px 17px 34px #111112, inset -17px -17px 34px #434348;
+}
+.mood {
+  background: linear-gradient(145deg, #0d48d4, #0b3cb2);
+  box-shadow: 5px 5px 14px #082d85, -5px -5px 14px #1059ff;
+  @apply w-14 h-14 absolute top-3 right-3 rounded-full flex items-center justify-center cursor-pointer;
+}
+body.dark div.reset,
+body.dark div.lap {
+  background: linear-gradient(145deg, #262629, #2d2d30);
+  box-shadow: 5px 5px 14px #1c1c1e, -5px -5px 14px #38383c;
+}
+body.dark .mood {
+  background: linear-gradient(145deg, #262629, #2d2d30);
+  box-shadow: 5px 5px 14px #1c1c1e, -5px -5px 14px #38383c;
+}
+body.dark .btn-section div.start i {
+  color: #000000 !important;
+}
+body.dark .lap-list {
+  background: linear-gradient(145deg, #262629, #2d2d30);
+  box-shadow: 5px 5px 14px #1c1c1e, -5px -5px 14px #38383c;
+}
